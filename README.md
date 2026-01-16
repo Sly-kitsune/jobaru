@@ -1,54 +1,155 @@
-# Jobaru 🤖💼
-**The Autonomous AI Job Application Agent**
+Jobaru 🤖💼
 
-Jobaru is a smart, local-first AI agent that helps you find and apply to jobs on LinkedIn automatically. It uses **Ollama** (local LLMs) to analyze your resume, match it with job descriptions, and even draft cover letters for you.
+A Human-Controlled, Privacy-First AI Job Application Agent
 
-## 🚀 Features
+Jobaru is a local-first AI agent that helps you discover, evaluate, and apply to jobs with minimal effort — while keeping you in control at every critical step.
 
-*   **resume Analysis**: Auto-detects the best job roles for you based on your resume.
-*   **Smart Search**: Scrapes LinkedIn for the freshest jobs (Past 24h) and filters out duplicates.
-*   **Auto-Apply**: Can click "Easy Apply" and fill out forms for you.
-*   **Human-in-the-Loop**: Safely pauses for critical steps (Review/Submit) or tricky questions (why do you fit?) so you never send a bad application.
-*   **Privacy First**: Runs locally on your machine. Your resume and data never leave your computer (except to apply!).
+It runs entirely on your machine using Ollama (local LLMs) to analyze your resume, identify suitable roles, draft tailored applications, and assist with job submissions — without sending your personal data to third-party AI services.
 
-## 🛠️ Prerequisites
+Jobaru is designed to assist, not impersonate.
 
-1.  **Python 3.10+** installed.
-2.  **Google Chrome** installed.
-3.  **Ollama** installed and running (for AI features).
-    *   Download from [ollama.com](https://ollama.com).
-    *   Run `ollama pull mistral` (or your preferred model).
+✨ What Jobaru Actually Does
 
-## 📦 Installation
+Jobaru turns job hunting into a supervised automation pipeline:
 
-1.  Clone this repository:
-    ```bash
-    git clone https://github.com/YOUR_USERNAME/jobaru.git
-    cd jobaru
-    ```
+Reads your real resume
 
-2.  Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+Infers roles that fit your profile
 
-## 🏃 Usage
+Searches for recent openings
 
-1.  **Prepare your Resume**: Have your `Resume.pdf` or `resume.txt` ready.
-2.  **Start the Agent**:
-    ```bash
-    python main.py
-    ```
-3.  **Follow the Wizard**:
-    *   The agent will ask for your resume and target role.
-    *   It can optionally analyze your resume to suggest roles!
-4.  **Login**: A browser will open. Log in to LinkedIn manually when prompted.
-5.  **Watch it Go**: The agent will start hunting for jobs.
+Drafts role-specific application content
 
-## ⚠️ Disclaimer
+Assists with form filling
 
-This tool is for educational purposes. Use responsibly. Automated scraping/applying may violate LinkedIn's Terms of Service. The authors are not responsible for any account restrictions.
+Stops and asks you before anything irreversible
 
-## 🤝 Contributing
+You remain the decision-maker. Jobaru handles the boring parts.
 
-Feel free to fork and submit PRs!
+🚀 Features
+
+Resume Intelligence
+Analyzes your resume locally to infer suitable roles and skill alignment.
+
+Smart Job Discovery
+Finds recent job listings and filters duplicates to reduce noise.
+
+Assisted Apply (Not Blind Automation)
+Can help fill “Easy Apply” forms using only your provided data.
+
+Human-in-the-Loop by Design
+Pauses for:
+
+Final review & submission
+
+Custom questions
+
+Ambiguous or subjective fields
+
+Privacy-First Architecture
+
+Runs fully on your machine
+
+Uses local LLMs via Ollama
+
+Your resume and analysis never leave your system
+
+No cloud AI APIs
+
+🔐 Control & Safety Model
+
+Jobaru is intentionally not a fire-and-forget bot.
+
+You log in manually
+
+You review generated content
+
+You approve submissions
+
+You can run in draft-only / dry-run mode
+
+You can stop it at any time
+
+Think of Jobaru as a power assistant, not an impersonator.
+
+🛠️ Prerequisites
+
+Python 3.10+
+
+Google Chrome
+
+Ollama (local LLM runtime)
+
+Download from https://ollama.com
+
+Example model:
+
+ollama pull mistral
+
+📦 Installation
+git clone https://github.com/Sly-kitsune/jobaru-llm-job-agent.git
+cd jobaru-llm-job-agent
+pip install -r requirements.txt
+
+🏃 Usage
+
+Prepare your resume
+resume.pdf or resume.txt
+
+Run Jobaru
+
+python main.py
+
+
+Follow the guided flow
+
+Optional resume analysis
+
+Role suggestions
+
+Job discovery
+
+Draft generation
+
+Manual login
+
+A browser opens
+
+You log in yourself
+
+Supervise & approve
+
+Review before submit
+
+Edit anything you want
+
+Jobaru proceeds only when allowed
+
+⚠️ Responsible Use Notice
+
+Jobaru is a personal productivity tool.
+
+It does not bypass authentication
+
+It does not scrape private data
+
+It does not falsify credentials
+
+It acts only on user-provided information
+
+Users are responsible for complying with the terms of platforms they interact with
+
+This project is intended for educational, personal, and experimental use.
+
+🧠 Why This Exists
+
+Job hunting is repetitive, time-consuming, and mentally draining.
+
+Jobaru exists because:
+
+“I didn’t want to keep doing dumb manual work — so I automated it.”
+
+🤝 Contributing
+
+PRs, issues, and forks are welcome.
+If you care about agent systems, automation, and local-first AI, you’ll feel at home here.
